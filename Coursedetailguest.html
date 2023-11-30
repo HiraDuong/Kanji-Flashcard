@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  <style>
+    .card,
+.ng-nhp,
+.nt-home {
+  position: absolute;
+  width: 184px;
+  height: 38px;
+}
+.card {
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.ng-nhp,
+.nt-home {
+  top: 11px;
+  left: 37px;
+}
+.ng-nhp {
+  top: 7px;
+  left: 5px;
+  display: inline-block;
+  width: 127px;
+  height: 28px;
+}
+.nt-ng-nhp {
+  position: absolute;
+  top: 9px;
+  left: 1290px;
+  border-radius: var(--br-3xs);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2.5px solid var(--color-royalblue-100);
+  box-sizing: border-box;
+  width: 138px;
+  height: 43px;
+  font-size: var(--font-size-xl);
+}
+.thanh-iu-hng {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro);
+  width: 1440px;
+  height: 60px;
+}
+.tn-kho-hc,
+.tn-kho-hc-wrapper {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.tn-kho-hc-wrapper {
+  top: 0;
+  width: 334px;
+  height: 56px;
+  overflow: hidden;
+}
+.m-t {
+  position: relative;
+}
+.description {
+  position: absolute;
+  top: 16px;
+  left: 35px;
+  font-weight: 500;
+}
+.description-wrapper {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-steelblue-200);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-steelblue-100);
+  box-sizing: border-box;
+  height: 68px;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: var(--font-size-5xl);
+}
+.m-t-parent {
+  top: 20px;
+  height: 108px;
+}
+.m-t-parent,
+.tc-gi-parent,
+.thi-gian-to-parent {
+  position: absolute;
+  left: 74px;
+  width: 668px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.tc-gi-parent {
+  top: 145px;
+  height: 108px;
+}
+.thi-gian-to-parent {
+  top: 270px;
+}
+.undraw-images-re-0kll-1-icon {
+  position: relative;
+  width: 329px;
+  height: 247px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.upload-a-image {
+  position: relative;
+  font-weight: 600;
+}
+.png-jpg-gif {
+  color: var(--color-dodgerblue-100);
+}
+.or-drag-and-container {
+  position: relative;
+  font-size: var(--font-size-xs);
+  color: var(--color-dodgerblue-500);
+}
+.hnh-nh-parent,
+.undraw-images-re-0kll-1-parent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.undraw-images-re-0kll-1-parent {
+  border-radius: var(--br-base);
+  background-color: var(--color-steelblue-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-steelblue-100);
+  box-sizing: border-box;
+  width: 442px;
+  height: 309px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.hnh-nh-parent {
+  position: absolute;
+  top: 20px;
+  left: 760px;
+  width: 467px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button1 {
+  position: relative;
+  text-transform: uppercase;
+}
+.button {
+  position: absolute;
+  top: -47px;
+  left: 1069px;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-100);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-dodgerblue-100);
+  box-sizing: border-box;
+  width: 141px;
+  height: 47px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-13xl);
+  cursor: pointer;
+  color: var(--color-white);
+}
+.common-info {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 1279px;
+  height: 487px;
+  font-size: var(--font-size-xl);
+}
+.th-1 {
+  position: absolute;
+  top: 13px;
+  left: 29px;
+  font-size: var(--font-size-5xl);
+}
+.word {
+  position: relative;
+  font-weight: 500;
+}
+.word-parent {
+  position: absolute;
+  top: 55px;
+  left: 29px;
+  width: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-child {
+  position: absolute;
+  top: 45px;
+  left: 357.5px;
+  width: 1px;
+  height: 121px;
+}
+.water {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-weight: 500;
+}
+.close-meaning-parent,
+.example-wrapper,
+.meaning-parent {
+  position: absolute;
+  top: 117px;
+  left: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.close-meaning-parent,
+.example-wrapper {
+  top: 55px;
+  left: 385px;
+}
+.example-wrapper {
+  top: 117px;
+}
+.undraw-images-re-0kll-1-icon1 {
+  position: relative;
+  width: 131px;
+  height: 85px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.th-1-parent,
+.undraw-images-re-0kll-1-group {
+  border-radius: var(--br-base);
+  background-color: var(--color-steelblue-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-steelblue-100);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.undraw-images-re-0kll-1-group {
+  position: absolute;
+  top: 26px;
+  left: 915px;
+  width: 165px;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base);
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.th-1-parent {
+  position: relative;
+  width: 1115px;
+  height: 186px;
+  flex-shrink: 0;
+}
+.flashcard-list,
+.frame,
+.frame1 {
+  position: absolute;
+  width: 1279px;
+  overflow: hidden;
+}
+.flashcard-list {
+  top: 449px;
+  left: 0;
+  height: 451px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-xs);
+}
+.frame,
+.frame1 {
+  top: 0;
+  left: 60px;
+  height: 900px;
+}
+.frame {
+  top: 79px;
+  left: 0;
+  width: 1339px;
+  text-align: left;
+  font-size: var(--font-size-25xl);
+  font-family: var(--font-inter);
+}
+.cousedetailguest {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-dodgerblue-100);
+  font-family: var(--font-montserrat);
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-xs: 12px;
+  --font-size-9xl: 28px;
+  --font-size-5xl: 24px;
+  --font-size-xl: 20px;
+  --font-size-25xl: 44px;
+  --font-size-13xl: 32px;
+  --font-size-4xl: 23px;
+  --font-size-7xl: 26px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-steelblue-100: rgba(0, 126, 197, 0.1);
+  --color-steelblue-200: rgba(0, 126, 197, 0.2);
+  --color-dodgerblue-100: #3b82f6;
+  --color-dodgerblue-200: #0085ff;
+  --color-dodgerblue-300: rgba(59, 130, 246, 0.61);
+  --color-dodgerblue-400: rgba(59, 130, 246, 0.59);
+  --color-dodgerblue-500: rgba(59, 130, 246, 0.7);
+  --color-gray-100: #929498;
+  --color-gainsboro: #d9d9d9;
+  --color-royalblue-100: #0080ff;
+  --color-cornflowerblue-100: #60a5fa;
+  --color-cornflowerblue-200: rgba(175, 179, 255, 0);
+  --color-lightskyblue: #93c5fd;
+  --color-whitesmoke: #f8fafc;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-3xs: 10px;
+  --gap-5xs: 8px;
+  --gap-xl: 20px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-base: 16px;
+  --padding-13xl: 32px;
+  --padding-5xs: 8px;
+
+  /* Border radiuses */
+  --br-base: 16px;
+  --br-3xs: 10px;
+  --br-11xl: 30px;
+  --br-263xl-3: 282.3px;
+  --br-31xl: 50px;
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="cousedetailguest">
+      <div class="thanh-iu-hng">
+        <div class="nt-home">
+          <b class="card">8年生CARD</b>
+        </div>
+        <div class="nt-ng-nhp">
+          <b class="ng-nhp">Đăng Nhập</b>
+        </div>
+      </div>
+      <div class="frame">
+        <div class="frame1">
+          <div class="tn-kho-hc-wrapper">
+            <b class="tn-kho-hc">Tên khoá học</b>
+          </div>
+          <div class="common-info">
+            <div class="m-t-parent">
+              <b class="m-t">Mô tả</b>
+              <div class="description-wrapper">
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="tc-gi-parent">
+              <b class="m-t">Tác giả </b>
+              <div class="description-wrapper">
+                <div class="description">Ducns</div>
+              </div>
+            </div>
+            <div class="thi-gian-to-parent">
+              <b class="m-t">Thời gian tạo</b>
+              <div class="description-wrapper">
+                <div class="description">17-10-2023</div>
+              </div>
+            </div>
+            <div class="hnh-nh-parent">
+              <b class="m-t">Hình ảnh</b>
+              <div class="undraw-images-re-0kll-1-parent">
+                <img
+                  class="undraw-images-re-0kll-1-icon"
+                  alt=""
+                  src="./public/undraw-images-re-0kll-1.svg"
+                />
+
+                <div class="upload-a-image">Upload a image</div>
+                <div class="or-drag-and-container">
+                  <span>or drag and drop </span>
+                  <span class="png-jpg-gif">PNG, JPG, GIF up to 25MB</span>
+                </div>
+              </div>
+            </div>
+            <div class="button" id="buttonContainer">
+              <b class="button1">THOÁT</b>
+            </div>
+          </div>
+          <div class="flashcard-list">
+            <div class="th-1-parent">
+              <b class="th-1">Thẻ #1</b>
+              <div class="word-parent">
+                <div class="word">Word</div>
+                <div class="water">水</div>
+              </div>
+              <img class="frame-child" alt="" src="./public/line-3.svg" />
+
+              <div class="meaning-parent">
+                <div class="word">Meaning</div>
+                <div class="water">water</div>
+              </div>
+              <div class="close-meaning-parent">
+                <div class="word">Close meaning</div>
+                <div class="water">川, 海</div>
+              </div>
+              <div class="example-wrapper">
+                <div class="word">Example</div>
+              </div>
+              <div class="undraw-images-re-0kll-1-group">
+                <img
+                  class="undraw-images-re-0kll-1-icon1"
+                  alt=""
+                  src="./public/undraw-images-re-0kll-11.svg"
+                />
+
+                <div class="upload-a-image">Upload a image</div>
+              </div>
+            </div>
+            <div class="th-1-parent">
+              <b class="th-1">Thẻ #1</b>
+              <div class="word-parent">
+                <div class="word">Word</div>
+                <div class="water">水</div>
+              </div>
+              <img class="frame-child" alt="" src="./public/line-3.svg" />
+
+              <div class="meaning-parent">
+                <div class="word">Meaning</div>
+                <div class="water">water</div>
+              </div>
+              <div class="close-meaning-parent">
+                <div class="word">Close meaning</div>
+                <div class="water">川, 海</div>
+              </div>
+              <div class="example-wrapper">
+                <div class="word">Example</div>
+              </div>
+              <div class="undraw-images-re-0kll-1-group">
+                <img
+                  class="undraw-images-re-0kll-1-icon1"
+                  alt=""
+                  src="./public/undraw-images-re-0kll-11.svg"
+                />
+
+                <div class="upload-a-image">Upload a image</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./course-page-guest.html";
+        });
+      }
+      </script>
+  </body>
+</html>
