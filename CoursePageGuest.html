@@ -20,8 +20,11 @@
   top: 0;
   left: 0;
   background-color: #d9d9d9;
-  width: 1440px;
+  width: 1600px;
   height: 60px;
+}
+.thanh-iu-hng-child:active{
+  transform: scale(1.1);
 }
 .card,
 .nt-home {
@@ -66,6 +69,9 @@
   height: 43px;
   cursor: pointer;
   font-size: 20px;
+}
+.nt-ng-nhp:active{
+  transform: scale(1.1);
 }
 .group-child,
 .thanh-iu-hng {
@@ -435,7 +441,7 @@ body {
   <body>
     <div class="coursepageguest">
       <div class="thanh-iu-hng">
-        <div class="thanh-iu-hng-child"></div>
+        <div class="thanh-iu-hng-child" ></div>
         <div class="nt-home" id="ntHomeContainer">
           <b class="card">8年生CARD</b>
         </div>
@@ -446,20 +452,18 @@ body {
       </div>
       <div class="rectangle-parent">
         <div class="group-child"></div>
-        <div class="tn-kha-hc-container">
-          <p class="tn-kha-hc">tên khóa học tìm kiếm</p>
+        <div class="tn-kha-hc-container" id="searchInput" onclick="getinput()">
         </div>
         <img
           class="untitled-design-1"
           alt=""
-          src="./public/untitled-design-1.svg"
+          src="https://storage.googleapis.com/figment-image-store/petite-magician-qk93_84:58.png" 
         />
       </div>
       <div class="danh-sch-cc">Danh sách các khóa học:</div>
       <div class="frame-parent">
         <div class="parent">
-          <img class="icon" alt="" src="./public/9@2x.png" />
-
+          <img class="icon" alt="" src="https://storage.googleapis.com/figment-image-store/petite-magician-qk93_84:65.png" />
           <div class="kha-hc-1-parent">
             <div class="kha-hc-1">khóa học 1</div>
             <div class="gii-thiu-kha-container">
@@ -471,7 +475,7 @@ body {
           </div>
         </div>
         <div class="group">
-          <img class="icon" alt="" src="./public/9@2x.png" />
+          <img class="icon" alt="" src="https://storage.googleapis.com/figment-image-store/petite-magician-qk93_84:89.png" />
 
           <div class="kha-hc-1-parent">
             <div class="kha-hc-1">khóa học 5</div>
@@ -484,7 +488,7 @@ body {
           </div>
         </div>
         <div class="container">
-          <img class="icon" alt="" src="./public/9@2x.png" />
+          <img class="icon" alt="" src="https://storage.googleapis.com/figment-image-store/petite-magician-qk93_84:89.png" />
 
           <div class="kha-hc-1-parent">
             <div class="kha-hc-1">khóa học 4</div>
@@ -497,7 +501,7 @@ body {
           </div>
         </div>
         <div class="frame-div">
-          <img class="icon" alt="" src="./public/9@2x.png" />
+          <img class="icon" alt="" src="https://storage.googleapis.com/figment-image-store/petite-magician-qk93_84:89.png" />
 
           <div class="kha-hc-1-parent">
             <div class="kha-hc-1">khóa học 3</div>
@@ -510,8 +514,7 @@ body {
           </div>
         </div>
         <div class="parent1">
-          <img class="icon" alt="" src="./public/9@2x.png" />
-
+          <img class="icon" alt="" src="https://storage.googleapis.com/figment-image-store/petite-magician-qk93_84:89.png" />
           <div class="kha-hc-1-parent">
             <div class="kha-hc-1">khóa học 2</div>
             <div class="gii-thiu-kha-container">
@@ -530,6 +533,7 @@ body {
       if (ntHomeContainer) {
         ntHomeContainer.addEventListener("click", function (e) {
           // Please sync "HomePageGuest" to the project
+          window.location.href='file:///D:/ITSS/homepageguest.html';
         });
       }
       
@@ -537,6 +541,7 @@ body {
       if (ntNgNhp) {
         ntNgNhp.addEventListener("click", function (e) {
           // Please sync "LoginPage" to the project
+          window.open( 'file:///D:/ITSS/loginpage.html','Login', 'width=1200,height=600');
         });
       }
       
@@ -545,6 +550,9 @@ body {
         buttonContainer.addEventListener("click", function (e) {
           // Please sync "CouseDetailGuest" to the project
         });
+      }
+      function getinput(){
+        var searchTerm = document.getElementById('searchInput').value;
       }
       </script>
   </body>

@@ -76,6 +76,10 @@
     width: 365px;
     height: 34px;
   }
+  .group-inner:active {
+    /* Khi nút được nhấn */
+    transform: scale(1.1); /* Phình to lên */
+}
   .ng-k {
     position: absolute;
     top: 8px;
@@ -166,11 +170,11 @@
 
       <div class="group-parent">
         <div class="rectangle-parent">
-          <div class="group-child"></div>
+          <input type="text"  class="group-child">
           <div class="tn-ng-nhp">Tên đăng nhập:</div>
         </div>
         <div class="rectangle-group">
-          <div class="group-child"></div>
+          <input type="text"  class="group-child">
           <div class="tn-ng-nhp">Họ tên:</div>
         </div>
         <div class="rectangle-container">
@@ -178,20 +182,20 @@
           <div class="ng-k">Đăng kí</div>
         </div>
         <div class="group-div">
-          <div class="group-child"></div>
+          <input type="text"  class="group-child">
           <div class="mt-khu">Mật khẩu：</div>
         </div>
         <div class="rectangle-parent1">
-          <div class="group-child"></div>
+          <input type="text"  class="group-child">
           <div class="mt-khu">Email：</div>
         </div>
         <div class="rectangle-parent2">
-          <div class="group-child"></div>
+          <input type="text"  class="group-child">
           <div class="mt-khu">Nhập lại mật khẩu：</div>
         </div>
         <b class="ng-k-ti">Đăng kí tài khoản</b>
         <div class="ng-nhp-parent">
-          <div class="ng-nhp" id="ngNhpText">Đăng nhập</div>
+          <a href="file:///D:/ITSS/loginpage.html" class="ng-nhp" id="ngNhpText">Đăng nhập</a>
           <div class="tn-ng-nhp">Đã có tài khoản?</div>
         </div>
       </div>
